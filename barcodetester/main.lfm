@@ -1,0 +1,71 @@
+object Form1: TForm1
+  Left = 963
+  Height = 494
+  Top = 508
+  Width = 394
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Barcode sender'
+  ClientHeight = 494
+  ClientWidth = 394
+  DesignTimePPI = 216
+  LCLVersion = '2.0.12.0'
+  object receiverhost: TEdit
+    Left = 40
+    Height = 45
+    Top = 24
+    Width = 180
+    TabOrder = 0
+    Text = '127.0.0.1'
+  end
+  object receiverport: TSpinEdit
+    Left = 232
+    Height = 45
+    Top = 24
+    Width = 113
+    MaxValue = 65535
+    MinValue = 1
+    TabOrder = 1
+    Value = 8182
+  end
+  object mateBtn: TButton
+    Left = 40
+    Height = 56
+    Top = 96
+    Width = 305
+    Caption = 'ClubMate'
+    OnClick = mateBtnClick
+    TabOrder = 2
+  end
+  object kinderriegelBtn: TButton
+    Left = 40
+    Height = 56
+    Top = 168
+    Width = 305
+    Caption = 'Kinderriegel'
+    OnClick = kinderriegelBtnClick
+    TabOrder = 3
+  end
+  object custombarcode: TEdit
+    Left = 40
+    Height = 45
+    Top = 294
+    Width = 305
+    TabOrder = 4
+  end
+  object customBtn: TButton
+    Left = 40
+    Height = 56
+    Top = 352
+    Width = 305
+    Caption = 'Custom'
+    OnClick = customBtnClick
+    TabOrder = 5
+  end
+  object udp: TLUDPComponent
+    Port = 0
+    Timeout = 0
+    Left = 316
+    Top = 445
+  end
+end

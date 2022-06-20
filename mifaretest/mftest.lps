@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="mftest.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="28" Y="18"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="C:\lazarus\fpc\3.2.0\source\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="1504"/>
+        <CursorPos X="56" Y="1536"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="mftest.lpr"/>
+        <Caret Line="18" Column="15"/>
+      </Position1>
+      <Position2>
+        <Filename Value="mftest.lpr"/>
+        <Caret Line="20" Column="11"/>
+      </Position2>
+      <Position3>
+        <Filename Value="mftest.lpr"/>
+        <Caret Line="25" Column="17"/>
+      </Position3>
+      <Position4>
+        <Filename Value="mftest.lpr"/>
+        <Caret Line="18" Column="25"/>
+      </Position4>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

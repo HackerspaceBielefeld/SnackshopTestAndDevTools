@@ -1,0 +1,137 @@
+object Form1: TForm1
+  Left = 943
+  Height = 1089
+  Top = 511
+  Width = 1543
+  Caption = 'SnackView'
+  ClientHeight = 1089
+  ClientWidth = 1543
+  DesignTimePPI = 192
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 1089
+    Top = 0
+    Width = 1543
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Guthaben'
+      ClientHeight = 1031
+      ClientWidth = 1527
+      object userBalanceView: TListView
+        Left = 8
+        Height = 937
+        Top = 8
+        Width = 1511
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        Columns = <        
+          item
+            Caption = 'User'
+            Width = 300
+          end        
+          item
+            Caption = 'Betrag'
+            Width = 300
+          end>
+        TabOrder = 0
+        ViewStyle = vsReport
+      end
+      object Label2: TLabel
+        Left = 16
+        Height = 45
+        Top = 969
+        Width = 264
+        Anchors = [akLeft, akBottom]
+        Caption = 'Gesamtguthaben:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -32
+        Font.Name = 'Segoe UI'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        OnClick = Label2Click
+      end
+      object userBalanceSum: TLabel
+        Left = 312
+        Height = 45
+        Top = 969
+        Width = 66
+        Anchors = [akLeft, akBottom]
+        Caption = '--- €'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -32
+        Font.Name = 'Segoe UI'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object monthlyclosingTab: TTabSheet
+      Caption = 'Monatsabschluss'
+      ClientHeight = 1031
+      ClientWidth = 1527
+      object monthlyClosingView: TListView
+        Left = 8
+        Height = 937
+        Top = 8
+        Width = 1511
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        Columns = <        
+          item
+            Caption = 'Jahr'
+            Width = 100
+          end        
+          item
+            Caption = 'Monat'
+            Width = 100
+          end        
+          item
+            Caption = 'Spenden'
+            Width = 150
+          end        
+          item
+            Caption = 'Beiträge'
+            Width = 150
+          end        
+          item
+            Caption = 'Snackshop an Verein'
+            Width = 250
+          end        
+          item
+            Caption = 'Eingezahlt'
+            Width = 150
+          end        
+          item
+            Caption = 'Verfuttert'
+            Width = 150
+          end>
+        TabOrder = 0
+        ViewStyle = vsReport
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Debug'
+      ClientHeight = 1031
+      ClientWidth = 1527
+      object debugout: TMemo
+        Left = 0
+        Height = 1031
+        Top = 0
+        Width = 1527
+        Align = alClient
+        ScrollBars = ssAutoBoth
+        TabOrder = 0
+      end
+    end
+  end
+end
